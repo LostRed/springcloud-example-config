@@ -6,11 +6,6 @@ spring:
 server:
   port: 8001
 
-spring:
-  profiles: dev
-  application:
-    name: springcloud-config-eureka
-
 #Mybatis的配置
 mybatis:
   type-aliases-package: info.info.lostred.springcloud.pojo
@@ -19,6 +14,7 @@ mybatis:
 
 #Spring的配置
 spring:
+  profiles: dev
   application:
     name: springcloud-config-provider #集群应用名保持一致，因为Ribbon通过应用名来访问服务
   datasource:
@@ -48,11 +44,6 @@ info:
 server:
   port: 8001
 
-spring:
-  profiles: test
-  application:
-    name: springcloud-config-eureka
-
 #Mybatis的配置
 mybatis:
   type-aliases-package: info.info.lostred.springcloud.pojo
@@ -61,6 +52,7 @@ mybatis:
 
 #Spring的配置
 spring:
+  profiles: test
   application:
     name: springcloud-config-provider #集群应用名保持一致，因为Ribbon通过应用名来访问服务
   datasource:
