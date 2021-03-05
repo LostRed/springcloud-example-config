@@ -8,7 +8,7 @@ server:
 
 #Mybatis的配置
 mybatis:
-  type-aliases-package: info.info.lostred.springcloud.pojo
+  type-aliases-package: info.lostred.springcloud.pojo
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
 
@@ -46,7 +46,7 @@ server:
 
 #Mybatis的配置
 mybatis:
-  type-aliases-package: info.info.lostred.springcloud.pojo
+  type-aliases-package: info.lostred.springcloud.pojo
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
 
