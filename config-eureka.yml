@@ -9,7 +9,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: springcloud-config-eureka
+    name: springcloud-eureka-server
 
 #Eureka配置
 eureka:
@@ -26,7 +26,7 @@ eureka:
       #单机
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       #集群
-      defaultZone: http://eureka-server-02:7002/eureka/,http://eureka-server-03:7003/eureka/
+      defaultZone: http://localhost:7002/eureka/,http://localhost:7003/eureka/
 
 ---
 server:
@@ -35,7 +35,7 @@ server:
 spring:
   profiles: test
   application:
-    name: springcloud-config-eureka
+    name: springcloud-eureka-server
 
 #Eureka配置
 eureka:
@@ -52,4 +52,4 @@ eureka:
       #单机
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       #集群
-      defaultZone: http://eureka-server-02:7002/eureka/,http://eureka-server-03:7003/eureka/
+      defaultZone: http://localhost:7002/eureka/,http://localhost:7003/eureka/
