@@ -16,7 +16,7 @@ mybatis:
 spring:
   profiles: dev
   application:
-    name: springcloud-config-provider #集群应用名保持一致，因为Ribbon通过应用名来访问服务
+    name: springcloud-provider #集群应用名保持一致，因为Ribbon通过应用名来访问服务
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -54,7 +54,7 @@ mybatis:
 spring:
   profiles: test
   application:
-    name: springcloud-config-provider #集群应用名保持一致，因为Ribbon通过应用名来访问服务
+    name: springcloud-provider #集群应用名保持一致，因为Ribbon通过应用名来访问服务
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
